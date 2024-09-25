@@ -27,7 +27,7 @@ function donate(cardId) {
     const donationAmount = parseFloat(donationInput.value);
     const currentDonation = document.getElementById(`currentDonation${cardId}`);
 
-    let donationName = ""; 
+    let donationName = "";
     if (cardId === 1) {
         donationName = "Flood Relief for Noakhali";
     } else if (cardId === 2) {
@@ -72,15 +72,15 @@ function validateDonation(donationAmount) {
 }
 
 // Toggle between Blog and Home
-document.getElementById('toggleButton').addEventListener('click', function() {
+document.getElementById('toggleButton').addEventListener('click', function () {
     const button = document.getElementById('toggleButton');
     const content = document.getElementById('content');
 
     if (button.innerText === 'Blog') {
         button.innerText = 'Home';
-        window.location.href = 'index.html';  
+        window.location.href = './index.html';
     } else {
         button.innerText = 'Blog';
-        window.location.href = 'blog.html';  
+        window.location.href = './blog.html';
     }
 });
